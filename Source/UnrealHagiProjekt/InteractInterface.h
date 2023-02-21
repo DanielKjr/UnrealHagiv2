@@ -11,6 +11,7 @@ UINTERFACE(MinimalAPI)
 class UInteractInterface : public UInterface
 {
 	GENERATED_BODY()
+
 };
 
 /**
@@ -18,10 +19,13 @@ class UInteractInterface : public UInterface
  */
 class UNREALHAGIPROJEKT_API IInteractInterface
 {
+	
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "InteractableInterface")
 		void Interact(ACharacter* CallingCharacter);
+
+	
 };
